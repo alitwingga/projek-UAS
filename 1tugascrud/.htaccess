@@ -1,0 +1,21 @@
+RewriteEngine on
+
+RewriteRule ^home$ ?module= [L]
+
+RewriteRule ^data_mahasiswa$ ?page=mahasiswa [L]
+RewriteRule ^update_mahasiswa-(.*)$ ?page=update&id=$1 [L]
+RewriteRule ^tambah_mahasiswa$ ?page=add [L]
+
+RewriteRule ^data_prestasi$ ?page=prestasi [L]
+RewriteRule ^tambah_prestasi-(.*)$ ?page=tambah_prestasi&id=$1 [L]
+RewriteRule ^update_prestasi-(.*)-(.*)$ ?page=update_prestasi&id=$1&no=$1 [L]
+
+
+RewriteRule ^data_kuliah$ ?page=kuliah [L]
+RewriteRule ^tambah_kuliah-(.*)$ ?page=tambah_kuliah&id=$1 [L]
+RewriteRule ^update_kuliah-(.*)-(.*)$ ?page=update_kuliah&id=$1&no=$1 [L]					  
+
+
+
+
+Options All -Indexes
